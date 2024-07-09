@@ -1,0 +1,6 @@
+.DS_Store
+.vscode
+*.pdf
+.parcel-cache
+node_modules
+dist
