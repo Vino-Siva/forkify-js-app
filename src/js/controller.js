@@ -30,6 +30,9 @@ const renderSpinner = function (parentEl) {
 
 const showRecipe = async function () {
   try {
+    const id = window.location.hash.slice(1);
+    if (!id) return;
+
     // * 1 . Loading Recipe
     renderSpinner(recipeContainer);
     const res = await fetch(
@@ -156,4 +159,5 @@ const showRecipe = async function () {
     alert(err);
   }
 };
-showRecipe();
+
+["hashchange", "load"].forEach((ev) => window.addEventListener(ev, showRecipe));
