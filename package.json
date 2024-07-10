@@ -1,7 +1,7 @@
 {
   "name": "forkify",
   "version": "1.0.0",
-  "description": "Final project for JavaScript course by Jonas",
+  "description": "Recipe Application. Final project for JavaScript course by Jonas",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
