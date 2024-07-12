@@ -3,7 +3,6 @@ import icons from "url:../../img/icons.svg";
 
 class ResultsView extends View {
   _parentElement = document.querySelector(".results");
-
   _errorMessage =
     "Shocking! We couldn't find a recipe for that one. Please try another one!";
   _message = "";
@@ -13,9 +12,12 @@ class ResultsView extends View {
   }
 
   _generateMarkupPreview(result) {
+    const id = window.location.hash.slice(1);
     return `
       <li class="preview">
-        <a class="preview__link" href="#${result.id}">
+        <a class="preview__link ${
+          result.id === id ? "preview__link--active" : ""
+        }" href="#${result.id}">
           <figure class="preview__fig">
             <img src="${result.image}" alt="${result.title}" />
           </figure>
