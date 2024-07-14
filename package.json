@@ -11,10 +11,6 @@
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Vino-Siva/forkify-js-app.git"
-  },
   "keywords": [
     "javascript",
     "sass",
@@ -22,17 +18,11 @@
   ],
   "author": "Vinoth Subramanian",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Vino-Siva/forkify-js-app/issues"
-  },
-  "homepage": "https://github.com/Vino-Siva/forkify-js-app#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.12.0",
-    "parcel": "^2.12.0"
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "^2.2.1"
   },
   "dependencies": {
-    "core-js": "^3.37.1",
-    "fracty": "^1.0.11",
-    "regenerator-runtime": "^0.14.1"
+    "fracty": "^1.0.11"
   }
 }
