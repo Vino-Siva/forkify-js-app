@@ -9,11 +9,7 @@ import { MODAL_CLOSE_SECS } from "./config.js";
 
 import "core-js/stable";
 import "regenerator-runtime/runtime";
-
-// https://forkify-api.herokuapp.com/v2
-
-///////////////////////////////////////
-if (module.hot) module.hot.accept();
+import { async } from "regenerator-runtime/runtime";
 
 const controlRecipes = async function () {
   try {

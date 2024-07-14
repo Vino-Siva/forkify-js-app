@@ -2,17 +2,23 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe Application. Final project for JavaScript course by Jonas",
-  "main": "index.js",
+  "default": "index.js",
+  "browserslist": "last 2 versions, > 0.5%, last 2 versions, not dead",
+  "targets": {
+    "main": false
+  },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vino-Siva/forkify-js-app.git"
   },
   "keywords": [
-    "javascript"
+    "javascript",
+    "sass",
+    "html"
   ],
   "author": "Vinoth Subramanian",
   "license": "ISC",
