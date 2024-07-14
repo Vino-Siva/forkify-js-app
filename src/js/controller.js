@@ -40,7 +40,7 @@ const controlSearchResults = async function () {
     resultsView.render(model.getSearchResultsPage());
     paginationView.render(model.state.search);
   } catch (err) {
-    console.error(err);
+    console.error(err, "🫤🫤🫤🫤🫤");
   }
 };
 
@@ -76,7 +76,7 @@ const controlAddRecipe = async function (newRecipe) {
     window.history.pushState(null, "", `#${model.state.recipe.id}`);
     setTimeout(() => addRecipeView.toggleWindow(), MODAL_CLOSE_SECS * 1000);
   } catch (err) {
-    console.error(err);
+    console.error(err, "🫤🫤🫤🫤🫤");
     addRecipeView.renderError(err.message);
   }
 };
