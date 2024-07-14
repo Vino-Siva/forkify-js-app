@@ -2,7 +2,7 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe Application. Final project for JavaScript course by Jonas",
-  "default": "index.js",
+  "default": "index.html",
   "browserslist": "last 2 versions, > 0.5%, last 2 versions, not dead",
   "targets": {
     "main": false
