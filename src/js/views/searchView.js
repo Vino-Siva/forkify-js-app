@@ -13,7 +13,7 @@ class SearchView {
 
   addHandlerSearch(handler) {
     this.#parentElement.addEventListener("click", function (e) {
-      e.preventDefault;
+      e.preventDefault();
       handler();
     });
   }
